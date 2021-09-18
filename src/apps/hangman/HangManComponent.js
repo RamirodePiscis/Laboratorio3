@@ -14,12 +14,17 @@ export const HangManComponent = () => {
             decrementCounter();
         }
     };
+    
+    
     return (
         <div>
             <h1>HangMan</h1>
             <hr />
             <DrawComponent counter={counter}/>
+            {counter === 0 ?(<h1>GAME OVER</h1>):(false)};
+            
             <WordComponent listWord={listWord}/>
+            {listWord === listWord?(<h1>FELICIDADES</h1>):(false)}
             <KeyBoardComponent handlerKeyPress={handlerKeyPress} />
         </div>
     )

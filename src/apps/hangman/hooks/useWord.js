@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+console.log("usestate",useState);
+
 export const useWord = (word) => {
     const listLetters = word.split("").map((item, index) => {
         item = item.toUpperCase();
@@ -26,4 +28,5 @@ export const useWord = (word) => {
         return false;
     };
     return [listWord, setListWord, ifContains, isValid];
+    
 };

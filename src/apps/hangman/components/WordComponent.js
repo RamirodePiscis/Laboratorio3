@@ -6,6 +6,7 @@ export const WordComponent = ({listWord}) => {
     // if(letter !== ""){
     //     ifContains(letter);
     // }
+    
     return (
          <div className="word">
         {listWord.map((item) => (
